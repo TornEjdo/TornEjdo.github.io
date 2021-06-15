@@ -1,0 +1,134 @@
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Odibee Sans', cursive;
+}
+
+
+
+#header 
+{
+    width: 100%;
+
+    background-color: brown;
+    color: white;
+    display:flex;
+    justify-content: center;
+    }  
+
+
+
+
+
+.section1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.section1 h1, p
+{
+
+    text-align: center;
+    
+}
+
+.cards{
+    background-color: brown;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-size:20px;
+    margin-top: 50px;
+    color: white;
+    padding: 20px;
+    width: 1000px;
+    flex-direction: row;
+   
+}
+
+#card1{
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s ease;
+    
+}
+button{
+    width: 400px;
+    height: 50px;
+    color: white;
+    background-color: brown;
+    overflow:hidden;
+    position: relative;
+    border: none;
+}
+#card2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#card3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button .circle {
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+
+@keyframes scale{
+    to{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+
+.cards h1 {
+    background-color: brown;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+} 
+
+#dropdown{
+    display: none;
+}
+
+#dropdown.active{
+    
+    display: block;
+}
+
+#dropdown ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section2
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.section2 h2{
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .cards{flex-direction: column;}
+  }

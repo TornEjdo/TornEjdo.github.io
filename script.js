@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.ripple')
-const RANDOM_QUOTE_API_URL ='http://api.quotable.io/random'
+const RANDOM_QUOTE_API_URL ='https://api.quotable.io/random'
 const quoteDisplayElement = document.getElementById('output')
 
 function getRandomQuote (){

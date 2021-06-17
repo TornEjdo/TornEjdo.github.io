@@ -256,8 +256,9 @@ button .circle {
 }
 
 @media only screen and (max-width: 1000px) {
-    .cards{flex-direction: column;}
-  }
+    .cards{flex-direction: column;
+    justify-content: center;
+    align-items: center;}
 
 
   

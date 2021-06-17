@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon-32x32.png" type="image/png" sizes="16x16">
+  
+  <script src="script.js" defer></script>
+  <title>CryptoType</title>
 </head>
 <body>
-
-<div id="header">
+  
+  <div id="header">
     <h1>CRYPTOTYPE</h1>
     <span></span>
             
     <span></span>
+    
 </div>
 
+  
 
 <div class="section1">
     <div class="cards">
@@ -39,19 +46,22 @@
     </div>
     
 </div>
-<script src="script.js"></script>
-<div class="section2">
-   <h2>Game modes</h2>
-</div>
 
-<div class="section3">
-    <div id="output"></div>
+
+  <div id="gamemodes">
+      <h1>Game modes</h1>
+  </div>
+  <div class="container">
+    <div class="quote-display" id="quoteDisplay"></div>
     
-    <p>fill this shit out and test your speed</p>
-    <textarea  id="quoteInput" class="quote-input" autofocus></textarea>
-    <p>wpm: 130</p>
+  </div>
+  <div id="information">
+    <p>Type something first so we test your speed.</p>
     
-</div>
+  </div>
+  <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+
+  <div id="wpm"><p>wpm:130</p></div>
 
 
 <div class="footer">
@@ -59,5 +69,7 @@
     <p>Visit us on</p>
     <img src="https://i.ibb.co/jk0XgDZ/facebook.png" alt="">
 </div>
+
+
 </body>
 </html>
